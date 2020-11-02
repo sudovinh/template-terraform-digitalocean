@@ -1,0 +1,17 @@
+#cloud-config
+
+package_update: true
+package_upgrade: true
+
+packages:
+  - apt-transport-https
+  - ca-certificates
+
+users:
+  - name: nonroot
+    gecos: nonroot
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    groups: users, sudo
+    lock_passwd: false
+    plain_text_passwd: ${nonroot_user_password}

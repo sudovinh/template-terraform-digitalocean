@@ -1,0 +1,3 @@
+digitalocean_token = "digital ocean api token"
+ssh_private_key = "{path to }/.ssh/id_rsa"
+nonroot_user_password = "strong password"
