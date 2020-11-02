@@ -42,7 +42,7 @@ variable "droplet_base_image" {
 }
 
 variable "droplet_size" {
-  description = "The unique slug that identifies the Droplet size"
+  description = "Droplet Type/Size"
   default     = "s-2vcpu-2gb"
 }
 
